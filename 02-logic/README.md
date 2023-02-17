@@ -26,7 +26,7 @@
 
    Greater than:
 
-   ![K-maps](images/https://github.com/siberiacaly/digital-electronics-1/blob/main/02-logic/B%20vetsi%20jak%20A.jpg)
+   ![K-maps](images/B%20vetsi%20jak%20A.jpg)
 
    Less than:
 
