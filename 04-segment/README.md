@@ -30,14 +30,14 @@
     -- Turn LED(4) on if input value is equal to 0, ie "0000"
          LED(4) <= '0' when SW = "0000";
 
- -- Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
+   -- Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
          LED(5) <= '0' when SW > "1001";
 
- -- Turn LED(6) on if inpxut value is odd, ie 1, 3, 5, ...
+    -- Turn LED(6) on if inpxut value is odd, ie 1, 3, 5, ...
          LED(6) <= '1' when (SW = "0001" OR SW = "0011" OR SW = "0101" OR SW = "0111" OR SW ="1001" OR SW = "1011" OR SW="1101" OR SW= "1111") 
          else '0';
 
- -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
+   -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
          LED(7) <= 
          '0' when SW = "0001" else 
          '0' when SW = "0010" else 
