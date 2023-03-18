@@ -28,7 +28,8 @@
       if rising_edge(clk) then
         if (rst = '1') then           -- Synchronous reset
           sig_cnt <= (others => '0'); -- Clear all bits
-        elsif (en = '1') then         -- Test if counter is enabled
+          
+        elseif (en = '1') then         -- Test if counter is enabled
 
          if (cnt_up = '1') then
           sig_cnt <= sig_cnt + 1;
